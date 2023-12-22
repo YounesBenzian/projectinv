@@ -1,0 +1,276 @@
+:root {
+    --hoofdkleur: #1F543C;
+    --accentkleur: #2d3f1b61;
+    --achtergrondkleur: #348552;
+    --tekstkleur: #ffffff;
+}
+
+@font-face {
+    font-family: "alfabet", sans-serif;
+    font-style: normal;
+    src: url(https://use.typekit.net/zyi7vrf.css);
+}
+
+@font-face {
+    font-family: "alfabet", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    src: url(https://use.typekit.net/zyi7vrf.css);
+}
+
+body {
+    background-color: var(--hoofdkleur);
+}
+
+header > section:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 1em;
+    padding: 0em;
+    background-color: var(--accentkleur);
+}
+
+header>section img {
+    height: 3.8em;
+    margin: 0.5em;
+    margin-left: 1em;
+}
+
+nav img {
+    height: 3em;
+    margin: 2em;
+    margin-top: 0.4em;
+}
+
+header nav li:nth-of-type(2) img {
+    height: 4em;
+}
+
+header nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul {
+    display: flex;
+    width: 22em;
+    height: 4em;
+    list-style-type: none;
+    margin-top:1em;
+    padding-top: 0em;
+    background-color:var(--accentkleur);
+    border-radius: 1em;
+}
+
+nav li {
+    margin-left: -0.5em;
+}
+
+
+
+header h1 {
+    display: flex;
+    flex-direction: row;
+    font-family: "alfabet", sans-serif;
+    color: var(--tekstkleur);
+    margin-top: 1.2em;
+    margin-left: 1em;
+
+}
+
+q {
+    font-family: "alfabet", sans-serif;
+    color: var(--tekstkleur);
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+/* main{
+    display:flex; 
+    ik heb hier bewust geen gebruik gemaakt van flexbox om eventuele animaties toe te voegen en om eventuele divjes niet te hinderen
+} */
+main section:nth-of-type(1) {
+    background-color: var(--achtergrondkleur);
+    border-radius: 1em;
+}
+
+/* ik krijg alleen border radius bij de onderkant */
+main section:nth-of-type(1) h2 {
+    color: var(--tekstkleur);
+    font-family: "alfabet", sans-serif;
+    text-align: center;
+    margin-top: 6em;
+    padding-top: 0.5em;
+    border-radius: 1em;
+}
+
+
+main section:nth-of-type(1) p {
+    color: var(--tekstkleur);
+    font-family: "alfabet", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    padding: 0.5em;
+
+}
+
+/* ik kon ook voor de code beneden flexbox gebruiken maar vond dit makkelijker 
+aangezien ik dit eerder zo heb gedaan */
+
+main>img:nth-of-type(1) {
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+    margin-left: 8.3em;
+    margin-bottom: -7em;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+/* heb helaas geen mooie ronde recycle icon kunnen maken dsu loopt wel beetje scheef */
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+main>img:nth-of-type(2) {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    margin-left: 9em;
+    margin-top: 1em;
+}
+
+main>h2:nth-of-type(1) {
+    font-family: "alfabet", sans-serif;
+    color: var(--tekstkleur);
+    margin-top: 6em;
+    text-align: center;
+    background-color: var(--achtergrondkleur);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    font-family: "alfabet", sans-serif;
+    color: var(--tekstkleur);
+    background-color: var(--achtergrondkleur);
+    margin: 1em;
+    border-radius: 1em;
+}
+
+section:nth-of-type(2)>img {
+    width: 21.4em;
+    height: 100%;
+    border-radius: 1em;
+
+}
+
+section:nth-of-type(2)>h3 {
+    text-align: center;
+}
+
+
+section:nth-of-type(2)>p {
+    font-family: "alfabet", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: -0.5em;
+    padding: 1em;
+    margin-bottom: -0.5em;
+    line-height: 1.3; 
+
+}
+
+section:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    font-family: "alfabet", sans-serif;
+    color: var(--tekstkleur);
+    background-color: var(--achtergrondkleur);
+    margin: 1em;
+    border-radius: 1em;
+}
+
+section:nth-of-type(3)>img {
+    width: 21.4em;
+    height: 100%;
+    border-radius: 1em;
+
+}
+
+section:nth-of-type(3)>h3 {
+    text-align: center;
+}
+
+
+section:nth-of-type(3)>p {
+    margin-top: -0.5em;
+    padding: 1em;
+    margin-bottom: -0.5em;
+    font-family: "alfabet", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.3; 
+
+}
+
+
+main>img:nth-of-type(3) {
+    position: absolute;
+    width: 4em;
+    height: 5em;
+    margin-left: 9.5em;
+    margin-top: 1em;
+}
+
+
+footer>h3 {
+    font-family: "alfabet", sans-serif;
+    color: var(--tekstkleur);
+    margin-top: 7em;
+    text-align: center;
+    background-color: var(--achtergrondkleur);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+iframe {
+    width: 23em;
+    height: 14em;
+    border-radius: 1em;
+
+}
+
+footer h4 {
+    font-family: "alfabet", sans-serif;
+    color: var(--tekstkleur);
+    margin-top: 1em;
+    text-align: center;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+footer ul {
+    font-family: "alfabet", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--tekstkleur);
+    list-style-type: none;
+    background-color:var(--accentkleur);
+    border-radius: 1em;
+    padding: 1em;
+
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
